@@ -1,0 +1,23 @@
+Dia 1
+
+ERROR: Cuando busco la pantalla no la encuentra con su nombre, porque será?
+SOLCUION: Al parecer, de forma intencionada o no, aleatoriamente la ventana puede coger 2 nombres -> PokeMMO o РokeМMO. Si parecen iguales, pero no, el segundo tiene letras en cirilico en vez de en latín
+
+ERROR: Cuando compruebo que estamos en la ciudad correcta a veces falla, porque?
+SOLUCION: Fallaba porque se hacia de noche, y la imagen no es la misma. Por tanto hemos bajado el umbral de acierto de la imagen a 80% suficiente como para no tener falsos positivos
+
+ERROR: No siempre que se ejecuta el movimiento es igual, porque?
+SOLCUION: No esperaba entre un movimiento en otro y eso hacia que se solaparan, asique he añadido un time.sleep(0.2)
+
+
+Dia 2
+
+ERROR: No sabia si detectar por pantalla mediante texto o imagenes
+SOLUCION: Al final cedi por imagenes porque los lectores de texto por imagen no son del todo buenos y suelen dar muchos falsos positivos
+
+ERROR: Habia que manejar todas las posibles salidas a la hora de capturar ya que podia tanto capturarse, huir, o fallar pero se queda ahi
+SOLUCION: Crear una funcion que se llama detectar_imagen que mira muchas veces la pantalla en busca de algo que identifica una de estas tres y proseguir
+
+ERROR: A la hora de detectar que ha encontrado un pokemon se usa una imagen donde pone "Magikarp" pero a la hora de capturar el pokemon se habria una ventana 
+donde tambien ponia magikarp y daba un falso positivo.
+SOLUCION: Una funcion que se encarga de cerrar esa pagina y despues hacer todo el proceso de volver a buscar pokemon...
