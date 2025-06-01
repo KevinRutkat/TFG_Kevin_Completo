@@ -1,0 +1,9 @@
+Link Trabajo Completo Drive: https://drive.google.com/file/d/1dEd8X8xp0mOHOsif24YBhGuRKmPRK-5f/view?usp=drive_link
+Link GitHub Completo: https://github.com/KevinRutkat/TFG_Kevin_Completo
+
+Contiene:
+
+App-PokeFarm -> Todo el codigo de la aplicación de Python en si
+Web-PokeFarm -> Una landingpage basado en la aplicación desde el cual se descargaria.
+Manual de Usuario
+Documentacion
